@@ -1,12 +1,12 @@
-GameDesignFinal 
+#GameDesignFinal 
 #3DattemptGameDesign
 
-from google.colab import drive
+#from google.colab import drive
 import numpy as np
-immport math
+import math
 from PIL import Image
-drive.mount('/content/drive')
-%cd /content/drive/My Drive/0 Randolph
+#drive.mount('/content/drive')
+#%cd /content/drive/My Drive/0 Randolph
 
 
 def objReader(file):
@@ -21,7 +21,7 @@ def objReader(file):
       line = line.strip() # if given "  brad s  " strip will return "brad s"
       if not line:
         continue
-      color = np.array(randColor())
+      #color = np.array(randColor())
       parts = line.split()
       if parts[0] == 'v':
         x = float(parts[1]) + x_offset
